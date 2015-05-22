@@ -1,0 +1,42 @@
+use_xft yes
+background yes
+
+# Use double buffering (reduces flicker, may not work for everyone)
+double_buffer yes
+
+own_window             yes
+own_window_transparent yes
+own_window_type        override
+#own_window_class      Conky
+own_window_hints       undecorated,below,sticky,skip_taskbar,skip_pager
+
+# Subtract file system buffers from used memory?
+no_buffers    yes
+
+update_interval 1
+draw_shades no
+draw_outline no
+draw_borders no
+
+xftalpha         1
+uppercase        no
+stippled_borders 0
+border_width     1
+draw_graph_borders no
+default_color    white
+
+maximum_width 300
+alignment top_left
+#alignment bottom_right
+
+gap_x 20
+gap_y 20
+
+TEXT
+${offset 0}${font Cantarell:size=12}cpu ${cpu}%${alignr}temp ${acpitemp}C°${font}
+${voffset 8}${font Sketch Rockwell:size=76}${alignr}${time %H:%M}${font}
+${voffset 8}${font Cantarell:size=12}${time %a}${alignr}${time %b %d}${font}
+#${voffset 8}${alignr}${battery_bar 4,300 BAT1}
+#${font Cantarell:size=9}${mem}${alignr}${fs_used /home}/${fs_size /home}${font}
+${font Cantarell:size=9}${mem}${alignr}${fs_free /home}${font}
+#${voffset 0}${font Cantarell:size=16}${alignr}${execpi 1800 bash ~/scripts/update.sh}${font}
