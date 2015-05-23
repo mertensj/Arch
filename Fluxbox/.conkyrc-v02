@@ -35,7 +35,7 @@ gap_y 20
 TEXT
 #${offset 0}${font Cantarell:size=12}cpu ${cpu}%${alignr}temp ${acpitemp}C°${font}
 # if above does not work, try this:
-${offset 0}${font Cantarell:size=12}cpu ${cpu}%${alignr}temp${execi 30 sensors | grep Core0 | awk '{print $3}' | tr "+" " "}${font}
+${offset 0}${font Cantarell:size=12}cpu ${cpu}%${alignr}${execi 30 sensors | grep -m 1 Core | awk '{print $3}' | tr "+" " "}${font}
 ${voffset 8}${font Sketch Rockwell:size=76}${alignr}${time %H:%M}${font}
 ${voffset 8}${font Cantarell:size=12}${time %a}${alignr}${time %b %d}${font}
 #${voffset 8}${alignr}${battery_bar 4,300 BAT1}
