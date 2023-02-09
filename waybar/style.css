@@ -7,7 +7,7 @@
 
 #window {
     color:#010101;
-    text-shadow:2px 2px rgba(0, 0, 0, 0.6)
+    text-shadow:1px 1px rgba(0, 0, 0, 0.6)
 }
 
 #mpd {
@@ -16,30 +16,31 @@
 }
 
 #cpu {
-    color:#40a789;
+    /* color:#333333; */
+    color:#c0b5ab;
     margin-left:0;
     margin-right:0;
     padding-left:12px;
     padding-right:12px;
-    text-shadow:2px 2px rgba(0, 0, 0, 0.6);
+    text-shadow:0px 0px rgba(0, 0, 0, 0.6);
 }
 
 #pulseaudio, #disk {
-    color:#40a789;
+    color:#c0b5ab;
     margin-left:0;
     margin-right:0;
     padding-left:11px;
     padding-right:11px;
-    text-shadow:2px 2px rgba(0, 0, 0, 0.6);
+    text-shadow:0px 0px rgba(0, 0, 0, 0.6);
 }
 
 #memory, #backlight {
-    color:#40a789;
+    color:#c0b5ab;
     margin-left:0;
     margin-right:0;
     padding-left:11px;
     padding-right:11px;
-    text-shadow:2px 2px rgba(0, 0, 0, 0.6);
+    text-shadow:0px 0px rgba(0, 0, 0, 0.6);
 }
 
 #workspaces button, #tags button {
